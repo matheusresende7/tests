@@ -7,6 +7,7 @@ void main() {
 
     final counterText = find.byValueKey('counter');
     final addButton = find.byValueKey('increment');
+    final removeButton = find.byValueKey('decrement');
 
     FlutterDriver driver;
 
@@ -30,6 +31,10 @@ void main() {
       await driver.tap(addButton);
       await driver.tap(addButton);
       await driver.tap(addButton);
+      await driver.tap(addButton);
+      await driver.tap(addButton);
+      await driver.tap(removeButton);
+      await driver.tap(removeButton);
       await driver.tap(addButton);
       await driver.tap(addButton);
       await driver.tap(addButton);
